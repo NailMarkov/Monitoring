@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банкоматы</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Inter-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header"> <a class="page-header__logo" href="#!"> <img src="img/logo.png" alt="Логотип сайта." width="45" height="45">КоСМоС</a>
+        <nav class="page-header__nav"> 
+          <ul class="list-pages">
+            <li class="list-pages__item"><a class="list-pages__link" href="#!">Меню</a>
+              <ul class="sublist-pages hidden">
+                <li class="sublist-pages__item">
+                  <h2 class="sublist-pages__title">Управление</h2>
+                  <ul class="sublist-list">
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Задания</a></li>
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#list"></use>
+                        </svg>Правила</a></li>
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#interlining"></use>
+                        </svg>Эталонные правила</a></li>
+                  </ul>
+                </li>
+                <li class="sublist-pages__item">
+                  <h2 class="sublist-pages__title">Настройки</h2>
+                  <ul class="sublist-list">
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#credit-card"></use>
+                        </svg>Устройства самообслуживания</a></li>
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#book-alt"></use>
+                        </svg>Справочники</a></li>
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#chart-tree"></use>
+                        </svg>Роли</a></li>
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#database"></use>
+                        </svg>Сервер</a></li>
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#settings-sliders"></use>
+                        </svg>Функциональные настройки</a></li>
+                  </ul>
+                </li>
+                <li class="sublist-pages__item">
+                  <h2 class="sublist-pages__title">Отчеты</h2>
+                  <ul class="sublist-list">
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#document"></use>
+                        </svg>Отчеты по банкоматам</a></li>
+                    <li class="sublist-list__item"><a class="sublist-list__link" href="#!"> 
+                        <svg class="sublist-list__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href="img/sprite.svg#address-book"></use>
+                        </svg>Отчеты по пользователям</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="list-pages__item"><a class="list-pages__link" href="#!">Графана</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__block"> 
+          <div class="info"> <a class="info__link" href="#!"><span class="visually-hidden">Иконка оповещения пользователя.</span><span class="info__badge"> </span>
+              <svg class="info__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#bell-ring"></use>
+              </svg></a></div>
+          <div class="user"> 
+            <h4 class="user__name">Имя</h4><span class="user__post">Администратор</span><img class="user__avatar" src="img/avatar-default.png" alt="Аватар пользователя." width="45" height="45">
+            <button class="user__btn" type="button"> <span class="visually-hidden">Кнопка переключения меню.</span>
+              <svg class="user__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#angle-small-down"></use>
+              </svg>
+            </button>
+            <ul class="list-user hidden">
+              <li class="list-user__item"><a class="list-user__link" href="#!"> 
+                  <svg class="list-user__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#lock"></use>
+                  </svg>Сменить пароль</a></li>
+              <li class="list-user__item"><a class="list-user__link" href="#!"> 
+                  <svg class="list-user__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#portrait"></use>
+                  </svg>Профиль</a></li>
+              <li class="list-user__item"><a class="list-user__link" href="#!"> 
+                  <svg class="list-user__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#sign-out"></use>
+                  </svg>Выход</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="index-page">
+        <div class="content"> 
+          <header class="content__header"> 
+            <ul class="list-breadcrumbs">
+              <li class="list-breadcrumbs__item"><a class="list-breadcrumbs__link list-breadcrumbs__link--active">Банкоматы</a></li>
+            </ul>
+            <div class="content__title"> 
+              <h2 class="title">Банкоматы</h2>
+              <form class="form-search">
+                <input class="form-search__input" type="search" name="search" placeholder="Поиск...">
+                <button class="form-search__button" type>
+                  <svg class="form-search__icon" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </header>
+          <div class="content__body"></div>
+        </div>
+      </main>
+      <footer class="page-footer"> <a class="page-footer__company">Copyright @2024</a>
+        <div class="page-footer__links"> <a class="page-footer__link" href="#!">Контакты</a><a class="page-footer__link" href="#!">Помощь</a></div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
