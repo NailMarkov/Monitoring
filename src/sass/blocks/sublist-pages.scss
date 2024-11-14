@@ -1,0 +1,76 @@
+.sublist-pages {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 6px 12px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  transition: display 1s ease-in-out;
+  z-index: 50;
+}
+
+.sublist-pages__item {
+  position: relative;
+  padding-right: 12px;
+  padding-bottom: 16px;
+  
+  &:not(:last-child) {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: 0;
+      bottom: 15px;  
+      width: 1px;
+      background-color: rgba(0, 0, 0, 0.125);
+    }
+  }
+}
+
+.sublist-pages__title {
+  margin: 0 0 16px 0;
+  padding: 8px; 
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-align: center;
+}
+
+.sublist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sublist-list__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 8px;
+  color: #333333;
+  border-radius: 4px;
+  transition: background-color 0.5s, color 0.5s;
+
+  &:focus,
+  &:hover {
+    background-color: #607D8B;
+    color: #ffffff;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+
+    .sublist-list__icon {
+      color: #ffffff;
+    }
+  }
+}
+
+.sublist-list__icon {
+  color: #607D8B;
+  transition: color 0.5s;
+}

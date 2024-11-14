@@ -1,0 +1,23 @@
+.page-header {
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  padding: 8px 16px;
+  background-color: #324148;
+  color: #ffffff;
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-header__nav {
+  position: relative;
+}
+
+.page-header__block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

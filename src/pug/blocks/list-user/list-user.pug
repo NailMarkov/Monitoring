@@ -1,0 +1,9 @@
+include list-user-data
+
+ul.list-user.hidden
+  each item in listUsers
+    li.list-user__item
+      a.list-user__link(href= item.link) 
+        svg.list-user__icon(aria-hidden="true", focusable="false", width="24", height="24", xmlns="http://www.w3.org/2000/svg")
+          use(xlink:href=`img/sprite.svg#${item.icon}`)
+        |#{item.text}

@@ -1,0 +1,17 @@
+.info__link {
+  position: relative;
+  display: inline-flex;
+  padding: 10px;
+}
+
+.info__badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 5px;
+  background-color: #fb2f2f;
+  color: #ffffff;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}

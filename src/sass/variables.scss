@@ -1,0 +1,41 @@
+
+// Project palette
+
+$color-big-stone: #324148;
+
+// Gradient
+
+// Typography
+// ---------------------------------
+
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-768:                            768px;
+$vp-1200:                           1200px;
+$vp-1366:                           1366px;
+
+// Paddings
+// --------------------------------
+
+$p-desktop:                         calc(50% - 580px);
+$p-tablet:                          calc(50% - 339px);
+$p-mobile:                          calc(50% - 145px);
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

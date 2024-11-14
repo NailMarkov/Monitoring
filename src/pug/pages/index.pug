@@ -1,0 +1,21 @@
+extends ../templates/main
+
+block variables 
+  - var pageTitle = "Банкоматы"
+  - var pageClass = "index-page"
+
+block content 
+  main(class= pageClass)
+    .content 
+      header.content__header 
+        ul.list-breadcrumbs
+          li.list-breadcrumbs__item
+            a.list-breadcrumbs__link.list-breadcrumbs__link--active Банкоматы
+        .content__title  
+          h2.title #{pageTitle}
+          form.form-search
+            input.form-search__input(type="search" name="search" placeholder="Поиск...")
+            button.form-search__button(type)
+              svg.form-search__icon(aria-hidden="true", focusable="false", width="24", height="24", xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="img/sprite.svg#search")
+      .content__body

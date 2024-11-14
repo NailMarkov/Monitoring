@@ -1,0 +1,13 @@
+include sublist-pages-data
+
+ul.sublist-pages.hidden
+  each listlinks, key in sublistPages
+    li.sublist-pages__item
+      h2.sublist-pages__title #{key}
+      ul.sublist-list
+        each el in listlinks
+          li.sublist-list__item
+            a.sublist-list__link(href= el.link) 
+              svg.sublist-list__icon(aria-hidden="true", focusable="false", width="24", height="24", xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href=`img/sprite.svg#${el.icon}`)
+              |#{el.text}

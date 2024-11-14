@@ -1,0 +1,29 @@
+.form-search {
+  position: relative;
+  min-width: 300px;
+}
+
+.form-search__input {
+  padding: 6px 30px 6px 6px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #607D8B;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 3px rgb(96, 125, 139);
+  }
+}
+
+.form-search__button {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  padding: 6px 6px 2px 8px;
+  background-color: #607D8B;
+  color: #ffffff;
+  border-radius: 0 4px 4px 0;
+}

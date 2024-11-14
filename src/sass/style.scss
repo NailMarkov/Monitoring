@@ -1,0 +1,19 @@
+/* Global */
+
+@use "global/fonts";
+@use "global/reboot";
+@use "global/utils";
+
+/* Blocks */
+
+@use "blocks/content";
+@use "blocks/form-search";
+@use "blocks/info";
+@use "blocks/list-breadcrumbs";
+@use "blocks/list-pages";
+@use "blocks/list-settings";
+@use "blocks/list-user";
+@use "blocks/page-footer";
+@use "blocks/page-header";
+@use "blocks/sublist-pages";
+@use "blocks/user";

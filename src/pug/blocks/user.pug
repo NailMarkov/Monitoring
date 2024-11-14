@@ -1,0 +1,9 @@
+.user 
+  h4.user__name Имя
+  span.user__post Администратор
+  img.user__avatar(src="img/avatar-default.png", alt="Аватар пользователя." width="45" height="45")
+  button.user__btn(type="button") 
+    span.visually-hidden Кнопка переключения меню.
+    svg.user__icon(aria-hidden="true", focusable="false", width="24", height="24", xmlns="http://www.w3.org/2000/svg")
+      use(xlink:href="img/sprite.svg#angle-small-down")
+  include list-user/list-user
