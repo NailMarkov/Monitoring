@@ -1,0 +1,7 @@
+mixin breadcrumb(active,text, href)
+  if active 
+    li.list-breadcrumbs__item
+      span.list-breadcrumbs__link&attributes(attributes)= text
+  else
+    li.list-breadcrumbs__item
+      a.list-breadcrumbs__link(href= href)= text
