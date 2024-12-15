@@ -31,4 +31,15 @@ const styles = () =>
       .pipe(gulp.dest(`${pathBuild.css}`, {sourcemaps: '.'}))
       .pipe(server.stream());
 
-export {styles};
+const awesome = () =>
+  gulp
+      .src(`${pathSrc.sass}/awesome.scss`, {sourcemaps: true})
+      .pipe(sass().on('error', notify.onError(errorMessages('SCSS'))))
+      .pipe(postcss(confPostcss))
+      .pipe(gulp.dest(`${pathBuild.css}`))
+      .pipe(csso())
+      .pipe(rename('awesome.min.css'))
+      .pipe(gulp.dest(`${pathBuild.css}`, {sourcemaps: '.'}))
+      .pipe(server.stream());
+
+export {styles, awesome};

@@ -1,0 +1,11 @@
+include list-pages-data
+
+ul.list-pages
+  each item in listPages 
+    li.list-pages__item
+      a.list-pages__link.list-pages__link--active(href= item.link) #{item.name}
+      if (item.lists)
+        ul.sublist-pages
+          each el in item.lists
+            li.sublist-pages__item
+              a.sublist-pages__link(href= el.link) #{el.name}

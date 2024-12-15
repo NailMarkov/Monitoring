@@ -1,23 +1,12 @@
-header.page-header 
-  a.page-header__logo(href="#!")
-    img(src="img/logo.svg", alt="Логотип сайта.", width="45", height="45")
+header.page-header
+  button.page-header__button(type="button") x
+    span.visually-hidden Переключение отображения меню.
+  .page-header__logo
+    a.page-header__logo(href="#!") 
+      span.page-header__text 
+        span.page-header__simbol К
+        |оСМоС
   nav.page-header__nav
-    ul.nav-list
-      li.nav-list__item
-        a.nav-list__link(href="#!") Главная
-      li.nav-list__item
-        a.nav-list__link(href="#!") О нас
-      li.nav-list__item
-        a.nav-list__link(href="#!") Контакты
-  .page-header__user
-    ul.user-list
-      li.user-list__item
-        a.user-list__link(href="#!") Иконка 
-      li.user-list__item
-        a.user-list__link(href="#!") Иконка 
-    .user 
-      .user__info
-        span.user__name Имя
-        span.user__email  E-mail
-      .user__avatar 
-        img(src="img/avatar.jpg", alt="Аватар пользователя.", width="45", height="45")
+    include ../list-pages/list-pages
+    include ../list-notify/list-notify
+  include ../user/user
