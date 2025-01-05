@@ -12,10 +12,10 @@
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
-  <body> 
+  <body class="page">
     <header class="page-header">
       <button class="page-header__button" type="button">x<span class="visually-hidden">Переключение отображения меню.</span></button>
-      <div class="page-header__logo"><a class="page-header__logo" href="#!"> <span class="page-header__text"> <span class="page-header__simbol">К</span>оСМоС</span></a></div>
+      <div class="page-header__logo"><a class="page-header__link" href="#!"> <span class="page-header__text"> <span class="page-header__simbol">К</span>оСМоС</span></a></div>
       <nav class="page-header__nav">
         <ul class="list-pages">
           <li class="list-pages__item"><a class="list-pages__link list-pages__link--active" href="index.html">Банкоматы</a>
@@ -44,6 +44,8 @@
           <li class="list-pages__item"><a class="list-pages__link list-pages__link--active" href="settings.html">Настройки</a>
           </li>
         </ul>
+      </nav>
+      <div class="user">
         <ul class="list-notify">
           <li class="list-notify__item"><span class="visually-hidden">Показывает входящие сообщения.</span><a class="list-notify__link" href="#!"> <i class="fa-regular fa-envelope fa-lg"></i></a>
             <ul class="sublist-mail">
@@ -61,11 +63,9 @@
             </ul>
           </li>
         </ul>
-      </nav>
-      <div class="user">
         <div class="user__avatar"><a class="user__img" href="#!"></a></div><span class="user__name">Head User</span><span class="user__post">Administrator</span>
-        <button class="user__button" type="button"><span class="visually-hidden">Переключение отображения меню.</span></button>
-        <ul class="list-user">
+        <button class="user__button" type="button"><span class="visually-hidden">Переключение отображения меню.</span><i class="fa-solid fa-caret-down"></i></button>
+        <ul class="list-user list-user--hidden">
           <li class="list-user__item"><a class="list-user__link" href="#!">Сменить пароль</a></li>
           <li class="list-user__item"><a class="list-user__link" href="#!">Инструкция</a></li>
           <li class="list-user__item"><a class="list-user__link" href="#!">Профиль</a></li>
@@ -74,14 +74,24 @@
       </div>
     </header>
     <main> 
-      <div class="container">
-        <h1>Welcome to our website</h1>
-        <p>This is a sample document generated using Pug.js and Sass.</p>
-      </div>
+      <div class="container"></div>
     </main>
     <footer class="page-footer"> 
-      <div class="page-footer__copyright">@2024</div>
-      <div class="page-footer__links"><a href="#">Telegram</a><a href="#">VK</a><a href="#">WhatsApp</a></div>
+      <div class="page-footer__copyright">@2023-2025</div>
+      <div class="page-footer__links"><a href="#"> 
+          <svg class="page-footer__social-icon" viewBox="0 0 24 24" width="24" height="24">
+            <use href="img/sprite.svg#telegram">     </use>
+          </svg></a><a href="#"> 
+          <svg class="page-footer__social-icon" viewBox="0 0 24 24" width="24" height="24">
+            <use href="img/sprite.svg#vk"></use>
+          </svg></a><a href="#"> 
+          <svg class="page-footer__social-icon" viewBox="0 0 24 24" width="24" height="24">
+            <use href="img/sprite.svg#whatsapp"></use>
+          </svg></a></div>
+      <ul class="list-info">
+        <li class="list-info__item"><a class="list-info__link" href="#!">Контакты</a></li>
+        <li class="list-info__item"><a class="list-info__link" href="#!">Помощь</a></li>
+      </ul>
     </footer>
     <script src="js/main.js"></script>
   </body>

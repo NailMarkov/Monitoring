@@ -1,0 +1,15 @@
+.list-pages {
+  display: flex;
+}
+
+.list-pages__link {
+  padding: 16px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.sublist-pages {
+  display: none;
+}

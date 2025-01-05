@@ -1,6 +1,17 @@
 footer.page-footer 
-  .page-footer__copyright @2024
+  .page-footer__copyright @2023-2025
   .page-footer__links
-    a(href="#") Telegram
-    a(href="#") VK
-    a(href="#") WhatsApp
+    a(href="#") 
+      svg.page-footer__social-icon(viewBox="0 0 24 24", width="24", height="24")
+        use(href="img/sprite.svg#telegram")      
+    a(href="#") 
+      svg.page-footer__social-icon(viewBox="0 0 24 24", width="24", height="24")
+        use(href="img/sprite.svg#vk")
+    a(href="#") 
+      svg.page-footer__social-icon(viewBox="0 0 24 24", width="24", height="24")
+        use(href="img/sprite.svg#whatsapp")
+  ul.list-info
+    li.list-info__item
+      a.list-info__link(href="#!") Контакты
+    li.list-info__item
+      a.list-info__link(href="#!") Помощь

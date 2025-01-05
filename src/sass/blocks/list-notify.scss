@@ -1,0 +1,29 @@
+.list-notify {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  
+  display: flex;
+  align-items: center;
+}
+
+.list-notify__link {
+  padding: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+.sublist-mail {
+  display: none;
+}
+
+.sublist-notify {
+  display: none;
+}

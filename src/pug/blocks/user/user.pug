@@ -1,11 +1,13 @@
 .user
+  include ../list-notify/list-notify
   .user__avatar
     a.user__img(href="#!")
   span.user__name Head User
   span.user__post Administrator
   button.user__button(type="button")
     span.visually-hidden Переключение отображения меню.
-  ul.list-user
+    <i class="fa-solid fa-caret-down"></i>
+  ul.list-user.list-user--hidden
     li.list-user__item
       a.list-user__link(href="#!") Сменить пароль
     li.list-user__item

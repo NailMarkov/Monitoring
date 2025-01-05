@@ -7,3 +7,9 @@
 @use "vendor/fontawesome/scss/fontawesome";
 @use "vendor/fontawesome/scss/solid";
 @use "vendor/fontawesome/scss/regular";
+
+@use "blocks/list-notify";
+@use "blocks/list-pages";
+@use "blocks/page-footer";
+@use "blocks/page-header";
+@use "blocks/user";
